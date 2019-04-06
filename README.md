@@ -26,5 +26,5 @@ The major required software packages to be installed are PostgreSQL, Python3, fl
     pip3 install sqlalchemy flask-sqlalchemy psycopg2 bleach requests
 
 #### Third Party Resources
-AWS Lightsail - Server Instance
+AWS Lightsail - Server Instance <br>
 Apache HTTP Server / Mod_WSGI - Web Server
