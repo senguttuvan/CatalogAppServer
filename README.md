@@ -27,4 +27,4 @@ The major required software packages to be installed are PostgreSQL, Python3, fl
 
 #### Third Party Resources
 <b>AWS Lightsail</b> - Server Instance <br>
-Apache HTTP Server / Mod_WSGI - Web Server
+<b>Apache HTTP Server / Mod_WSGI</b> - Web Server
