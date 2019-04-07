@@ -25,6 +25,28 @@ The major required software packages to be installed are PostgreSQL, Python3, fl
     pip3 install flask packaging oauth2client redis passlib flask-httpauth
     pip3 install sqlalchemy flask-sqlalchemy psycopg2 bleach requests
 
+#### Setting up server
+   Update packages <br>
+1. sudo apt-get update
+2. sudo apt-get upgrade
+3. sudo apt-get autoremove
+
+<br> Set up fire wall<br>
+sudo ufw allow ssh
+sudo ufw allow 2222/tcp
+sudo ufw allow www
+sudo ufw enable
+
+<br> Set up Apache WSGI server <br>
+sudo apt-get install apache2
+sudo apt-get install libapache2-mod-wsgi
+
+Open /etc/apache2/sites-enabled/000-default.conf
+Add the following line at the end of the <VirtualHost *:80> block, right before the closing </VirtualHost> line: WSGIScriptAlias / /var/www/html/myapp.wsgi
+
 #### Third Party Resources
-<b>AWS Lightsail</b> - Server Instance <br>
-<b>Apache HTTP Server / Mod_WSGI</b> - Web Server
+https://lightsail.aws.amazon.com/ls/docs/en/articles/lightsail-how-to-set-up-putty-to-connect-using-ssh
+https://www.ssh.com/ssh/key/
+https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html
+https://knowledge.udacity.com/
+https://stackoverflow.com/questions/7695962/postgresql-password-authentication-failed-for-user-postgres
