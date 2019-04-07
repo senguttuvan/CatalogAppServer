@@ -32,17 +32,17 @@ The major required software packages to be installed are PostgreSQL, Python3, fl
 3. sudo apt-get autoremove
 
 <br> Set up fire wall<br>
-sudo ufw allow ssh
-sudo ufw allow 2222/tcp
-sudo ufw allow www
-sudo ufw enable
+1. sudo ufw allow ssh
+2. sudo ufw allow 2222/tcp
+3. sudo ufw allow www
+4. sudo ufw enable
 
 <br> Set up Apache WSGI server <br>
 sudo apt-get install apache2
-sudo apt-get install libapache2-mod-wsgi
+<br>sudo apt-get install libapache2-mod-wsgi
 
-Open /etc/apache2/sites-enabled/000-default.conf
-Add the following line at the end of the <VirtualHost *:80> block, right before the closing </VirtualHost> line: WSGIScriptAlias / /var/www/html/myapp.wsgi
+<br>Open /etc/apache2/sites-enabled/000-default.conf
+<br>Add the following line at the end of the <VirtualHost *:80> block, right before the closing </VirtualHost> line: WSGIScriptAlias / /var/www/html/myapp.wsgi
 
 #### Third Party Resources
 https://lightsail.aws.amazon.com/ls/docs/en/articles/lightsail-how-to-set-up-putty-to-connect-using-ssh
