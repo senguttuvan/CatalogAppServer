@@ -38,8 +38,8 @@ The major required software packages to be installed are PostgreSQL, Python3, fl
 4. sudo ufw enable
 
 <br> Set up Apache WSGI server <br>
-sudo apt-get install apache2
-<br>sudo apt-get install libapache2-mod-wsgi
+1. sudo apt-get install apache2
+2. sudo apt-get install libapache2-mod-wsgi
 
 <br>Open /etc/apache2/sites-enabled/000-default.conf
 <br>Add the following line at the end of the <VirtualHost *:80> block, right before the closing </VirtualHost> line: WSGIScriptAlias / /var/www/html/myapp.wsgi
