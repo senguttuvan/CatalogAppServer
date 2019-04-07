@@ -50,3 +50,4 @@ https://www.ssh.com/ssh/key/
 https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html
 https://knowledge.udacity.com/
 https://stackoverflow.com/questions/7695962/postgresql-password-authentication-failed-for-user-postgres
+https://serverfault.com/questions/262751/update-ubuntu-10-04/262773#262773
